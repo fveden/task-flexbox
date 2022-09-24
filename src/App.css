@@ -4,3 +4,31 @@ body,
     height: 100%;
     margin: 0;
 }
+
+section {
+    width: 700px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section > div {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #daa520;
+}
+
+section div:nth-child(1),
+section div:nth-child(5) {
+    align-self: flex-start;
+}
+
+section div:nth-child(2),
+section div:nth-child(4) {
+    align-self: center;
+}
+
+section div:nth-child(3) {
+    align-self: flex-end;
+}
